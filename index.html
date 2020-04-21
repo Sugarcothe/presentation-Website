@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Presentation website</title>
+</head>
+<body>
+    <!--page 1 intro-->
+    <section id="page-1" class="page">
+        <h1>CORONAVIRUS DISEASE</h1>
+        <p>Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). The disease was first identified in December 2019 in Wuhan, the capital of China's Hubei province, and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic. First confirmed case of what was then an unknown coronavirus was traced back to November 2019 in Hubei province. Common symptoms include fever, cough, and shortness of breath.Other symptoms may include fatigue, muscle pain, diarrhea, sore throat, loss of smell, and abdominal pain..</p>
+
+        <div>
+            <a href="#page-2" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i>
+
+            </a>
+        </div>
+    </section>
+
+     <!--page 2-->
+    <section id="page-2" class="page">
+        <h1>USE YOUR MASK</h1>
+        <p>Always make sure you use your face mask, and be sure it covers every part of your mouth and nose. With the eyes as well, these are three places the virus could infilterate into the body. Prevention of the virus is quite more important than curing it as almost 10% of those who contacted it have died.</p>
+
+        <div>
+            <a href="#page-1" class="btn btn-dark">Prev page <i class="fas fa-arrow-circle-up"></i>
+            </a>
+
+            <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i>
+
+            </a>
+        </div>
+    </section>
+    <!--Page 3-->
+    <section id="page-3" class="page">
+        <h1>Wash your hands</h1>
+        <p>Another way to contain the virus is the always washing of ones hands. If people constantly wash their hands with soup every 20min and everyime they go out they stand a chance of not contacting the virus and therefore being able to contain the sickness. </p>
+
+        <div>
+            <a href="#page-2" class="btn btn-dark">Prev page <i class="fas fa-arrow-circle-up"></i>
+            </a>
+
+            <a href="#page-4" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i>
+
+            </a>
+        </div>
+    </section>
+
+    <!--Page 4-->
+    <section id="page-4" class="page">
+        <h1>SOCIAL DISTANCING</h1>
+        <p>As much as possible, stay at home but if there is any need to go out, one must do it with cautious and the mind of not mingling with crowd or group of persons, as the virus in its initial stage does not show symptoms</p>
+
+        <div>
+            <a href="#page-3" class="btn btn-dark">Prev page <i class="fas fa-arrow-circle-up"></i>
+            </a>
+        </div>
+    </section>
+    <script
+  src="https://code.jquery.com/jquery-3.5.0.min.js"
+  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+  crossorigin="anonymous"></script>
+
+  <script>
+      $('.btn').on('click', function(event) {
+          if (this.hash !=='') {
+              event.preventDefault();
+              const hash = this.hash;
+              $('html, body').animate(
+                  {
+                      scrollTop: $(hash).offset().top    
+                  },
+                  1800
+              );
+          }
+      });
+  </script>
+    
+</body>
+</html>
